@@ -17,7 +17,9 @@ return new class extends Migration
             $table->text('doc_title'); // Dokumen title
             $table->text('doc_desc'); // Dokumen description
             $table->date('doc_date'); // Date of dokumen
-            $table->string('doc_rev'); // Dokumen revision
+            $table->string('doc_rev'); 
+            $table->string('file_path'); // File path
+            $table->boolean('is_approved')->default(false);
             $table->timestamps(); // Created_at & Updated_at
             $table->softDeletes(); // Soft delete field
         });
