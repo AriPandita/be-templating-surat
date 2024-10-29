@@ -10,7 +10,7 @@ class MasterDokumen extends Model
     use SoftDeletes;
 
     protected $table = 'master_dokumen';
-    protected $fillable = ['doc_number', 'doc_title', 'doc_desc', 'doc_date', 'doc_rev'];
+    protected $fillable = ['doc_number', 'doc_title', 'doc_desc', 'doc_date', 'doc_rev', 'file_path', 'is_approved'];
 
     public function detailDokumens()
     {
