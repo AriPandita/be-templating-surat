@@ -6,11 +6,6 @@ use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\UsersController;
 
-// Route::get('/user', function (Request $request) {
-//     return $request->user();
-// })->middleware('auth:sanctum');
-
-
 Route::post('/register', [UsersController::class, 'register']);
 Route::post('/login', [UsersController::class, 'login']);
 
